@@ -9,7 +9,7 @@ This code is brought to you by Elwood Berry @ www.AnteraSoftware.com
 <div fxLayout="row">
   <div fxFlex="50%" style="padding: 65px;">
 
-    <!-- /start/ -->
+    <!-- / start: order-form-grid / -->
 
     <!-- SIZE -->
     <div id="ssi-size" class="ssi-default ssi-form-col-header ssi-source-status">
@@ -40,17 +40,57 @@ This code is brought to you by Elwood Berry @ www.AnteraSoftware.com
       </mat-form-field>
     </div>
 
-    <!-- /end/ -->
+    <!-- / end: order-form-grid / -->
+
+    <!-- / start: warehouse / -->
+    <div class="ssi-warehouse">
+      <h2>Warehouse</h2>
+      <!-- WAREHOUSE STOCK -->
+      <div id="ssi-warehouse-stock" class="ssi-default ssi-form-field">
+        <mat-form-field>
+          <!-- <mat-label>Quantity</mat-label> -->
+          <input matInput value="0">
+        </mat-form-field>
+      </div>
+    </div>
+
+
+    <!-- / start: supplier / -->
+    <div class="ssi-supplier">
+      <h2>Supplier</h2>
+      <!-- WAREHOUSE STOCK -->
+      <div id="ssi-supplier-stock" class="ssi-default ssi-form-field">
+        <mat-form-field>
+          <!-- <mat-label>Quantity</mat-label> -->
+          <input matInput value="0">
+        </mat-form-field>
+      </div>
+    </div>
+    <!-- /end: supplier / -->
 
 
 
 
 
-    <!-- /start/ -->
+    <!-- / start: conditions / -->
     <h2>Conditions</h2>
+    <span>{{demoConditions.value | json}}</span>
 
-    <mat-checkbox class="">This is a <strong>Stock Item</strong></mat-checkbox>
-    <!-- /end/ -->
+    <div [formGroup]="demoConditions">
+
+      <mat-checkbox formControlName="preferredWarehouse">
+        <strong>Supplier Warehouses</strong> (primary, secondary, tertiary, etc.) <strong>DO NOT</strong> have enough
+        inventory to cover this request.
+      </mat-checkbox>
+
+
+      <div></div>
+      <mat-checkbox formControlName="stockItem">
+        This is a <strong>Stock Item</strong>.
+      </mat-checkbox>
+    </div>
+
+    <!-- /end: conditions / -->
 
 
 

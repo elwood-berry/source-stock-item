@@ -1,10 +1,11 @@
 /*
-APPLICATION NAME GOES HERE
+SINGLE ITEM
 Author: 'me@elwoodberry.com'
 This code is brought to you by Elwood Berry @www.elwoodberry.com 
 */
 
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 //
 export interface PeriodicElement {
@@ -34,10 +35,23 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
+//
 export class AppComponent {
   // displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   public displayedColumns: string[] = ['position'];
-  dataSource = ELEMENT_DATA;
+  public dataSource = ELEMENT_DATA;
+
+  //
+  public demoConditions: FormGroup;
+
+  constructor(fb: FormBuilder) {
+    //
+    this.demoConditions = fb.group({
+      stockItem: false,
+      preferredWarehouse: false
+    });
+  }
 }
 
 /*
