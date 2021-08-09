@@ -1,0 +1,58 @@
+//
+.ssi-default {
+  height: 33px;
+  border: none;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding: 0;
+  text-align: center;
+}
+
+.ssi-form-field {
+  border: 1px solid #dedede;
+
+  .mat-form-field {
+    width: 100%;
+    height: inherit;
+
+    ::ng-deep .mat-form-field-wrapper {
+      // background-color: rgba(0, 255, 255, 0.2);
+
+      // FLEX
+      .mat-form-field-flex {
+        // background-color: rgba(0, 255, 255, 0.2);
+
+        .mat-form-field-infix {
+          padding: 0;
+          border-top: none;
+
+          .mat-input-element {
+            // background-color: rgba(0, 255, 255, 0.2);
+            height: 35px; // FIX THIS (TO DO) - Make this dynamic based on environment.
+            text-align: center;
+          }
+        }
+      }
+      // UNDERLINE
+      .mat-form-field-underline {
+        // background-color: rgba(255, 0, 0, 0.2);
+      }
+      // SUBSCRIPT WRAPPER
+      .mat-form-field-subscript-wrapper {
+        // background-color: rgba(0, 255, 200, 0.2);
+      }
+    }
+  }
+}
+
+.ssi-form-col-header {
+  color: #fff;
+  font-weight: 100;
+  padding-top: 8px;
+  height: 25px;
+}
+
+.ssi-source-status {
+  background-color: #23659a;
+}
