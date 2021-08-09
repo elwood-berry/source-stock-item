@@ -7,15 +7,20 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
 //
 .ssi-default {
   height: 33px;
-  // border: 1px solid #000000;
-  // overflow: hidden;
-  margin-bottom: 30px;
-  padding: 0 0 20px 0;
+  border: none;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding: 0;
   text-align: center;
+}
 
+.ssi-form-field {
+  border: 1px solid #dedede;
+
+  // MAT-FORM-FIELD --------------------------------------
   // [begin] ---
   .mat-form-field {
-    border: 1px solid #000;
     width: 100%;
     height: inherit;
 
@@ -24,19 +29,41 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
 
       // FLEX
       .mat-form-field-flex {
-        background-color: rgba(0, 255, 255, 0.2);
+        // background-color: rgba(0, 255, 255, 0.2);
+
+        .mat-form-field-infix {
+          padding: 0;
+          border-top: none;
+
+          .mat-input-element {
+            // background-color: rgba(0, 255, 255, 0.2);
+            height: 35px; // FIX THIS (TO DO) - Make this dynamic based on environment.
+            text-align: center;
+          }
+        }
       }
       // UNDERLINE
       .mat-form-field-underline {
-        background-color: rgba(255, 0, 0, 0.2);
+        // background-color: rgba(255, 0, 0, 0.2);
       }
       // SUBSCRIPT WRAPPER
       .mat-form-field-subscript-wrapper {
-        background-color: rgba(0, 255, 200, 0.2);
+        // background-color: rgba(0, 255, 200, 0.2);
       }
     }
   }
-  // [end] ---
+  // [end] MAT-FORM-FIELD -----------------------------
+}
+
+.ssi-form-col-header {
+  color: #fff;
+  font-weight: 100;
+  padding-top: 8px;
+  height: 25px;
+}
+
+.ssi-source-status {
+  background-color: #23659a;
 }
 
 /*
