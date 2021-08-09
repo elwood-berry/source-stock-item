@@ -31,7 +31,12 @@ import { AppComponent } from './app.component';
     MaterialLibraryModule,
     FlexLayoutModule
   ],
-  declarations: [AppComponent, CoreSelectComponent, CoreToolbarComponent],
+  declarations: [
+    AppComponent,
+    CoreSelectComponent,
+    CoreToolbarComponent,
+    OrderFormGridComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
