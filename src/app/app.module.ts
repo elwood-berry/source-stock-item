@@ -17,6 +17,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { CoreSelectComponent } from './components/material/core-select/core-select.component';
 import { CoreToolbarComponent } from './components/material/core-toolbar/core-toolbar.component';
 
+// CUSTOM: COMPONENTS
+import { OrderFormGridComponent } from './components/order-form-grid/order-form-grid.component';
+
 import { AppComponent } from './app.component';
 
 @NgModule({
