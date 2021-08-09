@@ -5,6 +5,39 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
 */
 
 //
+.ssi-default {
+  height: 33px;
+  // border: 1px solid #000000;
+  // overflow: hidden;
+  margin-bottom: 30px;
+  padding: 0 0 20px 0;
+  text-align: center;
+
+  // [begin] ---
+  .mat-form-field {
+    border: 1px solid #000;
+    width: 100%;
+    height: inherit;
+
+    ::ng-deep .mat-form-field-wrapper {
+      // background-color: rgba(0, 255, 255, 0.2);
+
+      // FLEX
+      .mat-form-field-flex {
+        background-color: rgba(0, 255, 255, 0.2);
+      }
+      // UNDERLINE
+      .mat-form-field-underline {
+        background-color: rgba(255, 0, 0, 0.2);
+      }
+      // SUBSCRIPT WRAPPER
+      .mat-form-field-subscript-wrapper {
+        background-color: rgba(0, 255, 200, 0.2);
+      }
+    }
+  }
+  // [end] ---
+}
 
 /*
 -------------------------------------------------

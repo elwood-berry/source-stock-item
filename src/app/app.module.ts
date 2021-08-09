@@ -15,6 +15,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 // CORE:MATERIAL
 import { CoreSelectComponent } from './components/material/core-select/core-select.component';
+import { CoreToolbarComponent } from './components/material/core-toolbar/core-toolbar.component';
 
 import { AppComponent } from './app.component';
 
@@ -27,7 +28,7 @@ import { AppComponent } from './app.component';
     MaterialLibraryModule,
     FlexLayoutModule
   ],
-  declarations: [AppComponent, CoreSelectComponent],
+  declarations: [AppComponent, CoreSelectComponent, CoreToolbarComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
