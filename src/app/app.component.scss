@@ -4,6 +4,9 @@ Author: 'me@elwoodberry.com'
 This code is brought to you by Elwood Berry @ www.AnteraSoftware.com 
 */
 
+$titleText: #b9b9b9; // Title, Source
+// ---
+
 $demo: transparent; // hsla(194, 100%, 50%, 0.025); // Used for demo purposes only.
 
 //
@@ -77,16 +80,20 @@ $demo: transparent; // hsla(194, 100%, 50%, 0.025); // Used for demo purposes on
     .mat-expansion-panel-header {
       background-color: $demo;
       border-radius: 0;
-      padding: 0;
+      padding: 0 0 16px 0;
       height: auto;
     }
   }
 
   // Source Button
   .source-trigger {
-    color: rgb(165, 165, 165);
+    background-color: $demo;
+    bottom: 0;
+    color: $titleText;
     font-size: 14px;
-    font-weight: 100;
+    padding: 0 0 0 5px;
+    position: absolute;
+    width: 100%;
   }
 }
 // -----------

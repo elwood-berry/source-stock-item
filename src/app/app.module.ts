@@ -9,6 +9,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+// import { HttpClientModule } from '@angular/common/http';
+// import { MatNativeDateModule } from '@angular/material/core';
+// import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
 // ASSETS
 import { MaterialLibraryModule } from '../assets/libs/material/material-library/material-library.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -19,6 +23,7 @@ import { CoreToolbarComponent } from './components/material/core-toolbar/core-to
 
 // CUSTOM: COMPONENTS
 import { OrderFormGridComponent } from './components/order-form-grid/order-form-grid.component';
+import { TabsWarehousesComponent } from './components/tabs-warehouses/tabs-warehouses.component';
 
 import { AppComponent } from './app.component';
 
@@ -35,7 +40,8 @@ import { AppComponent } from './app.component';
     AppComponent,
     CoreSelectComponent,
     CoreToolbarComponent,
-    OrderFormGridComponent
+    OrderFormGridComponent,
+    TabsWarehousesComponent
   ],
   bootstrap: [AppComponent]
 })
