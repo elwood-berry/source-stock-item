@@ -4,7 +4,7 @@ Author: 'me@elwoodberry.com'
 This code is brought to you by Elwood Berry @ www.AnteraSoftware.com 
 */
 
-$demo: #ff0000;
+$demo: hsla(194, 100%, 50%, 0.025); // Used for demo purposes only.
 
 //
 .ssi-default {
@@ -75,6 +75,7 @@ $demo: #ff0000;
     background-color: $demo;
     box-shadow: none;
     .mat-expansion-panel-header {
+      background-color: aqua;
       border-radius: 0;
       padding: 0;
       height: auto;
@@ -82,6 +83,11 @@ $demo: #ff0000;
   }
 
   // Source Button
+  .source-trigger {
+    color: rgb(165, 165, 165);
+    font-size: 14px;
+    font-weight: 100;
+  }
 }
 // -----------
 

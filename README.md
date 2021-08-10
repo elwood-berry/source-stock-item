@@ -2,6 +2,32 @@
 **Author**: 'eberry@anterasoftware.com'  
 This code is brought to you by human beings over at Antera Software USA, Inc.  
 
+
+
+bmrefactor.anterasoftware.com
+
+# MYSQL 
+```
+id 
+matrix_id
+quantity
+type
+source_warehouse
+incoming_warehouse_id
+inventory_received
+inventory_received_qty
+cust_inventory_received
+cust_inventory_received_qty 
+status 
+deleted
+fifo_breakdown
+```  
+"mysql> "
+```mysql  
+select distinct source_warehouse from line_item_inventory
+```
+
+
 ---  
   
 # References  
