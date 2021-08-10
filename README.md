@@ -28,6 +28,49 @@ select distinct source_warehouse from line_item_inventory
 ```
 
 
+
+
+```html
+<!-- SIZE -->
+<div id="ssi-size" class="ssi-default ssi-form-col-header ssi-source-status">
+  XL
+</div>
+
+<div *ngFor="let symbol of symbols; index as i;">
+  <div>Size</div>
+  <div>Here: {{symbol | json}}</div>
+  <div *ngFor="let symbol of symbols; index as i;">{{symbol.symbols | json}}</div>
+</div>
+
+
+<!-- COST -->
+<div id="ssi-cost" class="ssi-default ssi-form-field">
+  <mat-form-field>
+    <!-- <mat-label>Cost</mat-label> -->
+    <input matInput value="10.00">
+  </mat-form-field>
+</div>
+
+<!-- PRICE -->
+<div id="ssi-price" class="ssi-default ssi-form-field">
+  <mat-form-field>
+    <!-- <mat-label>Price</mat-label> -->
+    <input matInput value="20.00">
+  </mat-form-field>
+</div>
+
+<!-- QUANTITY -->
+<div id="ssi-price" class="ssi-default ssi-form-field">
+  <mat-form-field>
+    <!-- <mat-label>Quantity</mat-label> -->
+    <input matInput value="0">
+  </mat-form-field>
+</div>
+```
+
+
+
+
 ---  
   
 # References  

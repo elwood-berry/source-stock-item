@@ -2,14 +2,12 @@ import { Component, OnInit } from '@angular/core';
 
 // INTERFACE: SIZES
 export interface StockItemSizes {
-  name: string;
   symbols: string[];
 }
 
 // DATA: SIZES
 const ELEMENT_DATA_SIZES: StockItemSizes[] = [
   {
-    name: 'Sizes',
     symbols: ['XS', 'S', 'M', 'L', 'XL', 'XXL', '3XL', '4XL', '5XL']
   }
 ];
@@ -21,7 +19,7 @@ const ELEMENT_DATA_SIZES: StockItemSizes[] = [
 })
 export class OrderFormGridComponent implements OnInit {
   // PROPERTIES
-  public name = ELEMENT_DATA_SIZES;
+  public symbols = ELEMENT_DATA_SIZES;
 
   constructor() {}
 
