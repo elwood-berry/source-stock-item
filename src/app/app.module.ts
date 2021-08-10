@@ -24,6 +24,7 @@ import { CoreToolbarComponent } from './components/material/core-toolbar/core-to
 // CUSTOM: COMPONENTS
 import { OrderFormGridComponent } from './components/order-form-grid/order-form-grid.component';
 import { TabsWarehousesComponent } from './components/tabs-warehouses/tabs-warehouses.component';
+import { TabsSuppliersComponent } from './components/tabs-suppliers/tabs-suppliers.component';
 
 import { AppComponent } from './app.component';
 
@@ -41,7 +42,8 @@ import { AppComponent } from './app.component';
     CoreSelectComponent,
     CoreToolbarComponent,
     OrderFormGridComponent,
-    TabsWarehousesComponent
+    TabsWarehousesComponent,
+    TabsSuppliersComponent
   ],
   bootstrap: [AppComponent]
 })
