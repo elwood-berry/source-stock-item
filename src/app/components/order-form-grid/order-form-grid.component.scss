@@ -1,4 +1,4 @@
-$demo: hsla(194, 100%, 50%, 0.1); // Used for demo purposes only.
+$demo: transparent; // hsla(194, 100%, 50%, 0.1); // Used for demo purposes only.
 
 :host {
   background-color: rgba(255, 255, 0, 0.025);
@@ -15,25 +15,32 @@ $demo: hsla(194, 100%, 50%, 0.1); // Used for demo purposes only.
   margin-right: 5px;
   padding: 0 5px;
   text-align: center;
-  width: 100px;
+  width: 70px;
 }
 
 // TITLE CELL
 .ssi-title {
   background-color: $demo;
-  text-align: left;
-  padding-top: 8px;
+  color: #b9b9b9;
   height: 25px;
-  width: 156px;
   overflow: hidden;
-
-  span {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
+  padding-top: 8px;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 85px;
 }
 
+// HEADER CELL
+.ssi-form-col-header {
+  border: 1px solid #23659a;
+  color: #fff;
+  font-weight: 100;
+  padding-top: 8px;
+  height: 25px;
+}
+
+// INPUT CELL
 .ssi-form-field {
   border: 1px solid #dedede;
 
@@ -71,19 +78,7 @@ $demo: hsla(194, 100%, 50%, 0.1); // Used for demo purposes only.
   }
 }
 
-.ssi-form-col-header {
-  color: #fff;
-  font-weight: 100;
-  padding-top: 8px;
-  height: 25px;
-}
-
+// STATUS: 'Untouched'
 .ssi-source-status {
   background-color: #23659a;
-}
-
-// [start] SIZE
-#ssi-size {
-  // background-color: #e5e5e5;
-  width: 100%;
 }
