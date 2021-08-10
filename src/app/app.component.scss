@@ -83,6 +83,14 @@ $demo: transparent; // hsla(194, 100%, 50%, 0.025); // Used for demo purposes on
       padding: 0 0 16px 0;
       height: auto;
     }
+    ::ng-deep .mat-expansion-panel-content {
+      background-color: transparent;
+      border-top: 1px solid rgba(221, 221, 221, 0.35);
+
+      .mat-expansion-panel-body {
+        padding: 0;
+      }
+    }
   }
 
   // Source Button
