@@ -4,6 +4,8 @@ Author: 'me@elwoodberry.com'
 This code is brought to you by Elwood Berry @ www.AnteraSoftware.com 
 */
 
+$demo: #ff0000;
+
 //
 .ssi-default {
   height: 33px;
@@ -67,7 +69,20 @@ This code is brought to you by Elwood Berry @ www.AnteraSoftware.com
 }
 
 // -----------
+.ssi-expansion-panel {
+  // background-color: $demo;
+  .mat-expansion-panel {
+    background-color: $demo;
+    box-shadow: none;
+    .mat-expansion-panel-header {
+      border-radius: 0;
+      padding: 0;
+      height: auto;
+    }
+  }
 
+  // Source Button
+}
 // -----------
 
 /*
