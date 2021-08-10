@@ -4,7 +4,7 @@ Author: 'me@elwoodberry.com'
 This code is brought to you by Elwood Berry @ www.AnteraSoftware.com 
 */
 
-$demo: hsla(194, 100%, 50%, 0.025); // Used for demo purposes only.
+$demo: transparent; // hsla(194, 100%, 50%, 0.025); // Used for demo purposes only.
 
 //
 .ssi-default {
@@ -75,7 +75,7 @@ $demo: hsla(194, 100%, 50%, 0.025); // Used for demo purposes only.
     background-color: $demo;
     box-shadow: none;
     .mat-expansion-panel-header {
-      background-color: aqua;
+      background-color: $demo;
       border-radius: 0;
       padding: 0;
       height: auto;
