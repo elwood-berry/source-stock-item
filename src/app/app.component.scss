@@ -76,7 +76,9 @@ $demo: transparent; // hsla(194, 100%, 50%, 0.025); // Used for demo purposes on
   // background-color: $demo;
   .mat-expansion-panel {
     background-color: $demo;
+    border-radius: 0;
     box-shadow: none;
+
     .mat-expansion-panel-header {
       background-color: $demo;
       border-radius: 0;
@@ -99,7 +101,7 @@ $demo: transparent; // hsla(194, 100%, 50%, 0.025); // Used for demo purposes on
     bottom: 0;
     color: $titleText;
     font-size: 14px;
-    padding: 0 0 0 5px;
+    padding: 5px;
     position: absolute;
     width: 100%;
   }

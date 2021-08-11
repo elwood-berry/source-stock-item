@@ -1,82 +1,160 @@
-<h2>Warehouse</h2>
-<mat-tab-group animationDuration="0ms">
-  <mat-tab label="Customer">
+<h2 class="ssi-source-panel-title">Warehouse</h2>
 
+<!-- 
+  [start]
+  SOURCE TAB SYSTEM
+  Used for all items
+
+  prefix: 'ssi-source-tab-group'
+  
+-->
+<mat-tab-group animationDuration="0ms" class="ssi-source-tab-group">
+  <mat-tab label="Customer" style="padding: 0 0 5px 0">
     <!-- [start] -->
-    <!-- COST (LONG FORM) -->
-    <div id="ssi-cost" fxLayout="row">
-
+    <!-- CUSTOMER (LONG FORM) -->
+    <div id="ssi-warehouse-customer" fxLayout="row">
       <!-- cost.[title] -->
-      <div id="ssi-cost-title" class="ssi-default ssi-title">Cost</div>
+      <div id="ssi-warehouse-customer-title" class="ssi-default ssi-title">
+        Customer
+      </div>
 
       <!-- cost.[0] -->
-      <div id="ssi-cost-xs" class="ssi-default ssi-form-field">
+      <div id="ssi-warehouse-customer-xs" class="ssi-default ssi-form-field">
         <mat-form-field>
-          <input matInput value="1,000,000">
+          <input matInput value="10" />
         </mat-form-field>
       </div>
 
       <!-- cost.[1] -->
-      <div id="ssi-cost-s" class="ssi-default ssi-form-field">
+      <div id="ssi-warehouse-customer-s" class="ssi-default ssi-form-field">
         <mat-form-field>
-          <input matInput value="10.00">
+          <input matInput value="20" />
         </mat-form-field>
       </div>
 
       <!-- cost.[2] -->
-      <div id="ssi-cost-m" class="ssi-default ssi-form-field">
+      <div id="ssi-warehouse-customer-m" class="ssi-default ssi-form-field">
         <mat-form-field>
-          <input matInput value="10.00">
+          <input matInput value="30" />
         </mat-form-field>
       </div>
 
       <!-- cost.[3] -->
-      <div id="ssi-cost-l" class="ssi-default ssi-form-field">
+      <div id="ssi-warehouse-customer-l" class="ssi-default ssi-form-field">
         <mat-form-field>
-          <input matInput value="10.00">
+          <input matInput value="40" />
         </mat-form-field>
       </div>
 
       <!-- cost.[4] -->
-      <div id="ssi-cost-xl" class="ssi-default ssi-form-field">
+      <div id="ssi-warehouse-customer-xl" class="ssi-default ssi-form-field">
         <mat-form-field>
-          <input matInput value="10.00">
+          <input matInput value="10.00" />
         </mat-form-field>
       </div>
 
       <!-- cost.[5] -->
-      <div id="ssi-cost-xxl" class="ssi-default ssi-form-field">
+      <div id="ssi-warehouse-customer-xxl" class="ssi-default ssi-form-field">
         <mat-form-field>
-          <input matInput value="10.00">
+          <input matInput value="50" />
         </mat-form-field>
       </div>
 
       <!-- cost.[6] -->
-      <div id="ssi-cost-3xl" class="ssi-default ssi-form-field">
+      <div id="ssi-warehouse-customer-3xl" class="ssi-default ssi-form-field">
         <mat-form-field>
-          <input matInput value="10.00">
+          <input matInput value="43" />
         </mat-form-field>
       </div>
 
       <!-- cost.[7] -->
-      <div id="ssi-cost-4xl" class="ssi-default ssi-form-field">
+      <div id="ssi-warehouse-customer-4xl" class="ssi-default ssi-form-field">
         <mat-form-field>
-          <input matInput value="10.00">
+          <input matInput value="39" />
         </mat-form-field>
       </div>
 
       <!-- cost.[8] -->
-      <div id="ssi-cost-5xl" class="ssi-default ssi-form-field">
+      <div id="ssi-warehouse-customer-5xl" class="ssi-default ssi-form-field">
         <mat-form-field>
-          <input matInput value="10.00">
+          <input matInput value="28" />
+        </mat-form-field>
+      </div>
+    </div>
+    <!-- [end] -->
+  </mat-tab>
+  <mat-tab label="Company">
+    <!-- [start] -->
+    <!-- COMPANY (LONG FORM) -->
+    <div id="ssi-warehouse-customer" fxLayout="row">
+      <!-- cost.[title] -->
+      <div id="ssi-warehouse-customer-title" class="ssi-default ssi-title">
+        Company
+      </div>
+
+      <!-- cost.[0] -->
+      <div id="ssi-warehouse-customer-xs" class="ssi-default ssi-form-field">
+        <mat-form-field>
+          <input matInput value="10" />
         </mat-form-field>
       </div>
 
+      <!-- cost.[1] -->
+      <div id="ssi-warehouse-customer-s" class="ssi-default ssi-form-field">
+        <mat-form-field>
+          <input matInput value="20" />
+        </mat-form-field>
+      </div>
+
+      <!-- cost.[2] -->
+      <div id="ssi-warehouse-customer-m" class="ssi-default ssi-form-field">
+        <mat-form-field>
+          <input matInput value="30" />
+        </mat-form-field>
+      </div>
+
+      <!-- cost.[3] -->
+      <div id="ssi-warehouse-customer-l" class="ssi-default ssi-form-field">
+        <mat-form-field>
+          <input matInput value="40" />
+        </mat-form-field>
+      </div>
+
+      <!-- cost.[4] -->
+      <div id="ssi-warehouse-customer-xl" class="ssi-default ssi-form-field">
+        <mat-form-field>
+          <input matInput value="10.00" />
+        </mat-form-field>
+      </div>
+
+      <!-- cost.[5] -->
+      <div id="ssi-warehouse-customer-xxl" class="ssi-default ssi-form-field">
+        <mat-form-field>
+          <input matInput value="50" />
+        </mat-form-field>
+      </div>
+
+      <!-- cost.[6] -->
+      <div id="ssi-warehouse-customer-3xl" class="ssi-default ssi-form-field">
+        <mat-form-field>
+          <input matInput value="43" />
+        </mat-form-field>
+      </div>
+
+      <!-- cost.[7] -->
+      <div id="ssi-warehouse-customer-4xl" class="ssi-default ssi-form-field">
+        <mat-form-field>
+          <input matInput value="39" />
+        </mat-form-field>
+      </div>
+
+      <!-- cost.[8] -->
+      <div id="ssi-warehouse-customer-5xl" class="ssi-default ssi-form-field">
+        <mat-form-field>
+          <input matInput value="28" />
+        </mat-form-field>
+      </div>
     </div>
     <!-- [end] -->
-
-  </mat-tab>
-  <mat-tab label="Company">
-    [COMPANY INVENTORY TABLE GOES HERE]
   </mat-tab>
 </mat-tab-group>

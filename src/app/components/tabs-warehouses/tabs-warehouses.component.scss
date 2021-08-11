@@ -1,4 +1,48 @@
-// [start] ----- 
+/*
+SOURCE STOCK ITEM
+Author: 'me@elwoodberry.com'
+This code is brought to you by Elwood Berry @ www.AnteraSoftware.com 
+*/
+
+$demo: transparent; //  hsla(194, 100%, 50%, 0.025); // Used for demo purposes only.
+
+:host {
+  background: rgb(199, 199, 199);
+  background: linear-gradient(
+    180deg,
+    rgba(199, 199, 199, 0.15) 0%,
+    rgba(255, 255, 255, 1) 50%
+  );
+  display: block;
+  height: auto;
+  width: 100%;
+
+  .ssi-source-tab-group {
+    .mat-tab-header {
+    }
+    ::ng-deep .mat-tab-body-wrapper {
+      // background-color: $demo;
+      .mat-tab-body {
+        //background-color: $demo;
+        .mat-tab-body-content {
+          // background-color: #ff0000;
+          height: auto;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.ssi-source-panel-title {
+  font-weight: 100;
+  margin: 0;
+  padding: 20px 10px 0;
+}
+
+// [start] -----
+
+$titleText: #b9b9b9; // Title, Source
 
 // DEFAULT CELL
 .ssi-default {
@@ -78,4 +122,4 @@
   background-color: #23659a;
 }
 
-// [end] ----- 
+// [end] -----
