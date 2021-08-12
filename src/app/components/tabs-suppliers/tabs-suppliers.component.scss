@@ -1,0 +1,125 @@
+/*
+SOURCE STOCK ITEM
+Author: 'me@elwoodberry.com'
+This code is brought to you by Elwood Berry @ www.AnteraSoftware.com 
+*/
+
+$demo: transparent; //  hsla(194, 100%, 50%, 0.025); // Used for demo purposes only.
+
+:host {
+  background: rgb(199, 199, 199);
+  background: linear-gradient(
+    180deg,
+    rgba(199, 199, 199, 0.15) 0%,
+    rgba(255, 255, 255, 1) 50%
+  );
+  display: block;
+  height: auto;
+  width: 100%;
+
+  .ssi-source-tab-group {
+    .mat-tab-header {
+    }
+    ::ng-deep .mat-tab-body-wrapper {
+      // background-color: $demo;
+      .mat-tab-body {
+        //background-color: $demo;
+        .mat-tab-body-content {
+          // background-color: #ff0000;
+          height: auto;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.ssi-source-panel-title {
+  font-weight: 100;
+  margin: 0;
+  padding: 20px 10px 0;
+}
+
+// [start] -----
+
+$titleText: #b9b9b9; // Title, Source
+
+// DEFAULT CELL
+.ssi-default {
+  height: 33px;
+  border: none;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 0 5px;
+  text-align: center;
+  width: 70px;
+}
+
+// TITLE CELL
+.ssi-title {
+  background-color: $demo;
+  color: #b9b9b9;
+  height: 25px;
+  overflow: hidden;
+  padding-top: 8px;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 85px;
+}
+
+// HEADER CELL
+.ssi-form-col-header {
+  border: 1px solid #23659a;
+  color: #fff;
+  font-weight: 100;
+  padding-top: 8px;
+  height: 25px;
+}
+
+// INPUT CELL
+.ssi-form-field {
+  border: 1px solid #dedede;
+
+  .mat-form-field {
+    width: 100%;
+    height: inherit;
+
+    ::ng-deep .mat-form-field-wrapper {
+      // background-color: rgba(0, 255, 255, 0.2);
+
+      // FLEX
+      .mat-form-field-flex {
+        // background-color: rgba(0, 255, 255, 0.2);
+
+        .mat-form-field-infix {
+          padding: 0;
+          border-top: none;
+
+          .mat-input-element {
+            // background-color: rgba(0, 255, 255, 0.2);
+            height: 35px; // FIX THIS (TO DO) - Make this dynamic based on environment.
+            text-align: center;
+          }
+        }
+      }
+      // UNDERLINE
+      .mat-form-field-underline {
+        // background-color: rgba(255, 0, 0, 0.2);
+      }
+      // SUBSCRIPT WRAPPER
+      .mat-form-field-subscript-wrapper {
+        // background-color: rgba(0, 255, 200, 0.2);
+      }
+    }
+  }
+}
+
+// STATUS: 'Untouched'
+.ssi-source-status {
+  background-color: #23659a;
+}
+
+// [end] -----
